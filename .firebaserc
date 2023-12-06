@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ingreso-egreso-app-30e57": {
+      "hosting": {
+        "ingresoEgreso": [
+          "ingreso-egreso-app-30e57"
+        ]
+      }
+    }
+  }
+}
