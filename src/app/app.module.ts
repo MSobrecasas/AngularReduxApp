@@ -25,6 +25,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { appReducers } from './app.reducer';
 import { OrdenIngresoPipe } from './pipes/orden-ingreso.pipe';
 import { AuthModule } from './auth/auth.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -33,14 +34,12 @@ import { AuthModule } from './auth/auth.module';
     IngresoEgresoComponent,
     EstadisticaComponent,
     DetalleComponent,
-    FooterComponent,
-    NavbarComponent,
-    SidebarComponent,
     OrdenIngresoPipe
   ],
   imports: [
     BrowserModule,
     AuthModule,
+    SharedModule,
     AppRoutingModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
